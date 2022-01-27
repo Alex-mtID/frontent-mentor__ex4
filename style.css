@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white--paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    margin-top: calc(50vh - 11rem); 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    padding: 2.2rem;
+    position: relative;
+    height: 22rem;
+    width: 14rem;
+}
+
+.item h1 {
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.item img {
+    width: 3.6rem;
+    height: fit-content;
+}
+
+.item p {
+    padding-bottom: 2.6rem;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--Transparent-white--paragraphs);
+}
+
+.item button {
+    font-size: 0.8rem;
+    background-color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.item button:hover {
+    /*Remember: use outline for border, the size of box will not change  */
+    background-color: transparent;
+    outline: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn1 {
+    color: var(--Bright-orange);
+}
+
+.btn2 {
+    color: var(--Dark-cyan);
+}
+
+.btn3 {
+    color: var(--Very-dark-cyan);
+}
+
+.item1 {
+    background-color: var(--Bright-orange);
+    border-radius: 6px 0 0 6px;
+}
+
+.item2 {
+    background-color: var(--Dark-cyan);
+}
+
+.item3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 6px 6px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        position: relative;
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .item {
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .item1, .item3 {
+        border-radius: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2px;
+}
