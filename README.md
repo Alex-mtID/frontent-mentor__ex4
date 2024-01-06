@@ -1,5 +1,5 @@
 # Frontend Mentor - 3-column preview card component
-# https://alex-mtid.github.io/frontent-mentor__ex4/
+[https://alex-mtid.github.io/frontent-mentor__ex4/](https://alexid-id.github.io/frontent-mentor__ex4/)
 
 ![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
 
